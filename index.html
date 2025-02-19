@@ -1,55 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Computational Biologist | Bioinformatics | CRISPR Research</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#cv">CV</a></li>
+<html>
+  <head>
+    <title>Shantanu Khatri | Computational Biologist</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <header id="header">
+        <div class="logo">
+            <img src="data/photo.png" alt="Shantanu Khatri" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>SHANTANU KHATRI</h1>
+            <p class="bio_intro">
+              Computational Biologist with extensive experience in molecular
+              dynamics simulations, protein structural modeling, multi-omics and 
+              high-performance computing. Proficient in Python and adept at designing and formulating interdisciplinary
+              in silico workflows on computational clusters. Experienced in processing, analyzing, and interpreting high-throughput complex biomolecular data.  <br />  <a href="assets/Shantanu_Khatri_CV.pdf" target="_blank"  class="download-btn">Download CV</a>
+            </p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+          </ul>
+        </nav>
+      </header>
+      <div id="main">
+        <article id="intro">
+          <h2 class="major">Intro</h2>
+          <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+          <p>I am a Computational Biologist specializing in molecular dynamics simulations, protein structural modeling, and high-performance computing. My work integrates multi-omics data, AI-driven bioinformatics, and structural biology to drive discoveries in biomolecular science. Passionate about interdisciplinary research, I aim to bridge computational and experimental biology to develop innovative solutions for biomedical challenges. </p>
+          <p>My expertise lies in biomolecular simulations to understand protein dynamics at an atomistic level, leveraging machine learning applications for protein structure prediction. I am also proficient at designing  large-scale computational pipelines that integrate complex molecular data and multi-omics, and AI-driven models to answer fundamental questions in biology. In addition to my research, I have a strong passion for programming, with expertise in Python and its applications in computational biology. I thrive in interdisciplinary collaborations, working alongside experimental biologists to validate computational findings and translate them into biomedical innovations. Outside of science, I enjoy table-tennis and hiking, always seeking new challenges and adventures in nature.</p>
+        </article>
+        <article id="work">
+          <h2 class="major">Work</h2>
+          <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+          <p>
+            Protein Predictions: Leveraged AlphaFold2-Multimer pipeline to predict
+            high-order oligomeric assemblies regulating conjugation machinery in
+            human autophagy and performed micro-second molecular simulations to
+            analyze protein structural dynamics.
+          </p>
+          <video width="100%" autoplay loop height="auto" controls>
+            <source src="video/0001-0250.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Biomolecular Simulations: Investigated structural differences in
+            various functional forms of E1 enzyme ATG7 by leveraging AlphaFold
+            to generate assemblies and performing molecular dynamics simulations
+            to map critical interactions with key proteins followed by experimental validations (Malhotra & Khatri et al., Autophagy, 2023)
+            .
+          </p>
+          <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+          <p>
+            Cavity Proteins: Explored the bipartite membrane protein ATG2A,
+            revealing its architecture, and identified dynamic transitions of
+            cavity-lining residues through simulations, suggesting their
+            critical role in regulating lipid transfer.
+          </p>
+          <span class="image main"><img src="images/pic05.jpg" alt="" /></span>
+          <p>
+            Resource Development: Developed web-resource RAPSAP, a curated
+            database providing comprehensive structural information on the
+            complete human autophagy protein interactome containing ~416 proteins (Malhotra & Khatri et al., Autophagy, 2023)
+            .
+          </p>
+          <span class="image main"><img src="images/pic06.jpg" alt="" /></span>
+          <p>
+            Cohort Studies: Conducted serological testing on 1008 voluntary
+            participants as part of the Phenome India Cohort Project (CSIR-800),
+            utilizing Elecsys Anti-SARS-CoV-2 electrochemiluminescence
+            immunoassay (ECLIA) for qualitative antibody detection followed by curation and analsis of clinical data.
+          </p>
+        </article>
+        <article id="about">
+          <h2 class="major">Skills</h2>
+          <span class="image main"><img src="images/python.jpg" alt="" /></span>
+          <p><strong>Multiscale Protein Modeling & Dynamics</strong> - Modeling and analyzing protein dynamics and interactions in high-order protein assemblies and protein-membrane systems and utilizing molecular dynamics simulations with GROMACS and CHARMM.</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a computational biologist with a passion for CRISPR research, structural biology, and high-performance computing. My work involves molecular modeling, bioinformatics-driven protein design, and multi-omics data analysis.</p>
-    </section>
+<p><strong>AI-Based Protein Modeling & Docking</strong> - Modeling proteins using AI-based pipelines like AlphaFold, ProteinMPNN, and RFdiffusion in HPC and performing protein-ligand docking with HADDOCK and AutoDock.</p>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> CRISPR Evolutionary Trajectories</li>
-            <li><strong>Project 2:</strong> Machine Learning in Protein Design</li>
-            <li><strong>Project 3:</strong> High-Performance Computing for Bioinformatics</li>
-        </ul>
-    </section>
+<p><strong>Molecular Visualization & Structure Presentation</strong> - Visualizing and presenting molecular structures using ChimeraX, PyMOL, VMD, and Blender.</p>
 
-    <section id="cv">
-        <h2>CV</h2>
-        <p><a href="cv.pdf" download>Download my CV</a></p>
-    </section>
+<p><strong>Free Energy Calculations & Structural Analysis</strong> - Performing MM-PBSA (Molecular Mechanics-Poisson–Boltzmann Surface Area) free energy calculations and analyzing protein structural networks in high-order oligomers.</p>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">yourusername</a></p>
-    </section>
+<p><strong>Computational Workflow Automation</strong> - Scripting and automating computational workflows using Python, Unix, and Bash and utilizing libraries like Pandas, Scikit-learn, NumPy, Biopython, and MDAnalysis.</p>
 
-    <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
-    </footer>
-</body>
+<p><strong>High-Performance Computing (HPC) & Large-Scale Computations</strong> - Running large-scale computations on HPC clusters using SLURM and PBS.</p>
+
+<p><strong>Containerization & Cloud Computing</strong> - Deploying Docker and Singularity for CPU/GPU-based computations on the NVIDIA DGX Platform and executing scientific and drug discovery workflows on AWS.</p>
+
+<p><strong>Experimental Validation & Biophysical Techniques</strong> - Hands-on experience with experimental design and validation techniques and performing Isothermal Titration Calorimetry (ITC) and protein purification.</p>
+
+<p><strong>Multi-Omics Data Integration & Analysis</strong> - Building and optimizing pipelines for multi-omics data integration, including proteomics, metabolomics, and next-generation sequencing (NGS).</p>
+
+<p><strong>Bioinformatics Database & Web Development</strong> - Managing databases and developing web-based bioinformatics resources.</p>
+
+<p><strong>AI/ML & Deep Learning in Bioinformatics</strong> - Applying AI, machine learning (ML), and deep learning for biological data analysis and being proficient in ML frameworks such as TensorFlow and PyTorch.</p>
+
+        </article>
+        <article id="contact">
+          <h2 class="major">Contact</h2>
+          <ul class="icons">
+            <li>
+              <a href="https://x.com/Shantanu_khtri" class="icon brands fa-twitter" target="_blank"
+                ><span class="label">Twitter</span></a
+              > &nbsp;@x.com/Shantanu_khtri
+            </li>
+            <li>
+              <a
+                href="mailto:shantanukhatri.bio@gmail.com"
+                class="icon brands fa-google"
+                target="_blank"
+                ><span class="label"></span
+              ></a>&nbsp;shantanukhatri.bio@gmail.com
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shantanukhatri/"
+                class="icon brands fa-linkedin"
+                target="_blank"
+                ><span class="label">LinkedIn</span></a
+              >&nbsp;@shantanukhatri
+            </li>
+            <li>
+              <a
+                href="https://github.com/Comp-era"
+                target="_blank"
+                class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >&nbsp;@github.com/Comp-era
+            </li>
+            <li>
+              <a
+                href="https://stackoverflow.com/users/15029532/comp-era"
+                target="_blank"
+                class="icon brands fa-stack-overflow"
+                ><span class="label">Stack Overflow</span></a
+              > &nbsp;@comp-era
+            </li>
+          </ul>
+        </article>
+      </div>
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+      </footer>
+    </div>
+    <div id="bg"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
-
