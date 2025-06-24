@@ -11,4 +11,4 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 
 ## Get in Touch
 Feel free to connect with me via:
-- Email:shantanukhatri1@gmail.com
+- Email:shantanukhatri.bio@gmail.com
