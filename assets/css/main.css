@@ -1601,13 +1601,56 @@ p{
   opacity: 1;
 }
 
+/* ── Base style for both quotes ── */
+.quote-float {
+  width: clamp(280px, 90%, 400px);
+  padding: 1rem;
+  background: rgba(255,255,255,0.08);
+  border-left: 3px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  font-style: italic;
+  text-align: center;
+  z-index: 999;
+  animation: fadeInMoveUp 0.8s ease-out forwards;
+}
 
-/* === MOBILE Fix for quote box position === */
-@media screen and (max-width: 768px) {
-  .quote-float {
-    display: none !important; /* hide quote on small devices */
+/* ── Desktop: show only the top‐right version ── */
+.quote-mobile  { display: none; }
+@media screen and (min-width: 769px) {
+  .quote-desktop {
+    display: block;
+    position: absolute;
+    top: 110px;
+    right: 15px;
   }
 }
+
+/* ── Mobile: show only the bottom‐of‐page version ── */
+.quote-desktop { display: none; }
+@media screen and (max-width: 768px) {
+  .quote-mobile {
+    display: block;
+    position: absolute;           /* anchored to #wrapper */
+    bottom: 0;                    /* true wrapper bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ── Allow the header to grow to fit all text ── */
+#header .inner {
+  height: auto !important;        /* let container size to its content */
+  max-height: none !important;    /* remove any height cap */
+  overflow: visible !important;   /* don’t clip overflow text */
+  padding: 2rem 1rem !important;   /* breathing room around the text */
+}
+
+
+
 
 ul.icons {
   list-style: none;
@@ -1650,3 +1693,8 @@ ul.icons li a i {
 }
 
 
+@media screen and (max-width: 768px) {
+  #wrapper {
+    padding-bottom: 0 !important;
+  }
+}

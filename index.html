@@ -17,13 +17,18 @@
     /></noscript>
   </head>
   <body class="is-preload">
- <!-- ✅ Floating quote with fade-in animation -->
+  <div id="wrapper">
+      <!-- Desktop quote: shown only on wide screens -->
+  <div class="quote-float quote-desktop fade-in" id="quote-box-desktop">
+    <div class="quote-text">“Intelligence is the ability to adapt to change.”</div>
+    <div class="quote-author">– Stephen Hawking</div>
+  </div>
+     <!-- ✅ Floating quote with fade-in animation -->
   <div class="quote-float fade-in"  id="quote-box">
     <div class="quote-text">“Intelligence is the ability to adapt to change.”</div>
     <div class="quote-author">– Stephen Hawking</div>
   </div>
 
-  <div id="wrapper">
       <header id="header">
         <div class="logo">
             <img src="data/photo_2.jpg" alt="Shantanu Khatri" />
@@ -89,7 +94,7 @@
                 also deeply enthusiastic about science communication and connecting with people 
                 across disciplines.
                  Outside of science, I enjoy table-tennis and hiking, always seeking new challenges and adventures in nature.</p>
-          <p><b>P.S.</b>My idea of meditation? Designing and rendering molecular visualizations!</p>
+          <p><b>P.S.</b> My idea of meditation? Designing and rendering molecular visualizations!</p>
         </article>
         <article id="work">
           <h2 class="major">Work</h2>
@@ -143,7 +148,7 @@
         </article>
         <article id="about">
           <h2 class="major">Skills</h2>
-          <span class="image main"><img src="images/python.jpg" alt="" /></span>
+          <span class="image main"><img src="images/photo-blender.png" alt="" /></span>
           <p><strong>Multiscale Protein Modeling & Dynamics</strong> - Modeling and analyzing protein dynamics and interactions in high-order protein assemblies and protein-membrane systems and utilizing molecular dynamics simulations with GROMACS and CHARMM.</p>
 
 <p><strong>AI-Based Protein Modeling & Docking</strong> - Modeling proteins using AI-based pipelines like AlphaFold, ProteinMPNN, and RFdiffusion in HPC and performing protein-ligand docking with HADDOCK and AutoDock.</p>
@@ -156,11 +161,11 @@
 
 <p><strong>High-Performance Computing (HPC) & Large-Scale Computations</strong> - Running large-scale computations on HPC clusters using SLURM and PBS.</p>
 
-<p><strong>Containerization & Cloud Computing</strong> - Deploying Docker and Singularity for CPU/GPU-based computations on the NVIDIA DGX Platform and executing scientific and drug discovery workflows on AWS.</p>
+<p><strong>Containerization & Cloud Computing</strong> - Creating and deploying Docker, Singularity and Apptainer for CPU/GPU-based computations on the NVIDIA DGX platform and executing scientific and drug discovery workflows on AWS.</p>
 
 <p><strong>Experimental Validation & Biophysical Techniques</strong> - Hands-on experience with experimental design and validation techniques and performing Isothermal Titration Calorimetry (ITC) and protein purification.</p>
 
-<p><strong>Multi-Omics Data Integration & Analysis</strong> - Building and optimizing pipelines for multi-omics data integration, including proteomics, metabolomics, and next-generation sequencing (NGS).</p>
+<p><strong>Multi-Omics Data Integration & Analysis</strong> - Building and optimizing pipelines for multi-omics data integration, including proteomics, metabolomics, and Next-Generation Sequencing (NGS).</p>
 
 <p><strong>Bioinformatics Database & Web Development</strong> - Managing databases and developing web-based bioinformatics resources.</p>
 
@@ -199,10 +204,9 @@
 </article>
 
       </div>
-  
       <footer id="footer">
         <p class="copyright">
-          &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+          &copy; Untitled. Design</a>.
         </p>
       </footer>
     </div>
