@@ -7,23 +7,33 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
   <body class="is-preload">
-    <div id="wrapper">
+ <!-- ✅ Floating quote with fade-in animation -->
+  <div class="quote-float fade-in"  id="quote-box">
+    <div class="quote-text">“Intelligence is the ability to adapt to change.”</div>
+    <div class="quote-author">– Stephen Hawking</div>
+  </div>
+
+  <div id="wrapper">
       <header id="header">
         <div class="logo">
-            <img src="data/photo.png" alt="Shantanu Khatri" />
+            <img src="data/photo_2.jpg" alt="Shantanu Khatri" />
         </div>
         <div class="content">
           <div class="inner">
             <h1>SHANTANU KHATRI</h1>
             <p class="bio_intro">
-              Computational Biologist with extensive experience in molecular
-              dynamics simulations, protein structural modeling, multi-omics and 
+              Computational Biologist with extensive experience in protein structural modeling, molecular
+              dynamics simulations, multi-omics and 
               high-performance computing. Proficient in Python and adept at designing and formulating interdisciplinary
               in silico workflows on computational clusters. Experienced in processing, analyzing, and interpreting high-throughput complex biomolecular data.  <br />  <a href="assets/Shantanu_Khatri_CV.pdf" target="_blank"  class="download-btn">Download CV</a>
             </p>
@@ -41,46 +51,91 @@
       <div id="main">
         <article id="intro">
           <h2 class="major">Intro</h2>
-          <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-          <p>I am a Computational Biologist specializing in molecular dynamics simulations, protein structural modeling, and high-performance computing. My work integrates multi-omics data, AI-driven bioinformatics, and structural biology to drive discoveries in biomolecular science. Passionate about interdisciplinary research, I aim to bridge computational and experimental biology to develop innovative solutions for biomedical challenges. </p>
-          <p>My expertise lies in biomolecular simulations to understand protein dynamics at an atomistic level, leveraging machine learning applications for protein structure prediction. I am also proficient at designing  large-scale computational pipelines that integrate complex molecular data and multi-omics, and AI-driven models to answer fundamental questions in biology. In addition to my research, I have a strong passion for programming, with expertise in Python and its applications in computational biology. I thrive in interdisciplinary collaborations, working alongside experimental biologists to validate computational findings and translate them into biomedical innovations. Outside of science, I enjoy table-tennis and hiking, always seeking new challenges and adventures in nature.</p>
+<div class="swiper mySwiper image main">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/pic01.jpg" alt="Slide 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/pic09.JPG" alt="Slide 2" />
+      </div>
+            <div class="swiper-slide">
+        <img src="images/pic12.jpg" alt="Slide 3" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/pic10.jpg" alt="Slide 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/pic13.jpg" alt="Slide 5" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/pic11.jpg" alt="Slide 6" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+          <p>With biology at the core and computation as a passion, I am a Computational Biologist(Ph.D., CSIR–Senior Research Fellow) proficient in protein structural modeling, 
+            complex biomolecular simulations, and high-performance analysis. My work integrates multi-omics data, AI-driven bioinformatics, 
+            and structural biology to advance discoveries in biological science. Passionate about interdisciplinary research, I aim to bridge 
+             computational and experimental biology to develop innovative solutions for scientific discoveries. </p>
+          <p>My expertise lies in biomolecular simulations to understand protein dynamics at an atomistic level, 
+            leveraging machine learning applications for protein structure prediction. I am also proficient at designing
+              large-scale computational pipelines that integrate complex molecular data and multi-omics, and AI-driven models
+               to answer fundamental questions in biology. In addition to my research , I have a strong passion for programming, 
+               with expertise in Python and its applications in computational biology. I thrive in interdisciplinary collaborations,
+                working alongside experimental biologists to validate computational findings and translate them into meaningfull insights. I’m 
+                also deeply enthusiastic about science communication and connecting with people 
+                across disciplines.
+                 Outside of science, I enjoy table-tennis and hiking, always seeking new challenges and adventures in nature.</p>
+          <p><b>P.S.</b>My idea of meditation? Designing and rendering molecular visualizations!</p>
         </article>
         <article id="work">
           <h2 class="major">Work</h2>
           <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
           <p>
-            Protein Predictions: Leveraged AlphaFold2-Multimer pipeline to predict
-            high-order oligomeric assemblies regulating conjugation machinery in
-            human autophagy and performed micro-second molecular simulations to
-            analyze protein structural dynamics.
+            Protein predictions: Leveraged AlphaFold2-multimer pipeline to predict
+            high-order oligomeric protein assemblies regulating conjugation machinery in
+            human autophagy and to explore their detailed  structural architecture.
           </p>
           <video width="100%" autoplay loop height="auto" controls>
             <source src="video/0001-0250.mp4" type="video/mp4" />
           </video>
           <p>
-            Biomolecular Simulations: Investigated structural differences in
-            various functional forms of E1 enzyme ATG7 by leveraging AlphaFold
-            to generate assemblies and performing molecular dynamics simulations
-            to map critical interactions with key proteins followed by experimental validations (Malhotra & Khatri et al., Autophagy, 2023)
+            Biomolecular simulations: Investigated structural differences across
+            various functional oligomeric forms of E1 enzyme ATG7 in complex with ubiquitin-like proteins (UBLs) and E2-like enzymes
+             leveraging molecular dynamics simulations,
+            revealing structural and mechanistic insights.(Malhotra & Khatri et al., Autophagy, 2023)
             .
           </p>
+          <span class="image main"><img src="images/pic07.jpg" alt="" /></span>
+          <p>
+            In-silico mutations: Designed in-silico mutants of the ATG7–ATG10 tetrameric 
+            complex to identify and validate key binding regions, assessing their effects 
+            on protein–protein interactions and elucidating the role of intrinsically disordered regions (IDRs) in mediating complex stability.
+          </p>
+          <span class="image main"><img src="images/pic08.jpg" alt="" /></span>
+          <p>
+            Experimental design & validations: Designed an integrated workflow combining in-silico predictions with in-vitro and 
+            biophysical experiments to validate key binding regions and interaction (Malhotra & Khatri et al., Autophagy, 2023).
           <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
           <p>
-            Cavity Proteins: Explored the bipartite membrane protein ATG2A,
+            Cavity proteins: Explored the bipartite membrane protein ATG2A,
             revealing its architecture, and identified dynamic transitions of
             cavity-lining residues through simulations, suggesting their
             critical role in regulating lipid transfer.
           </p>
           <span class="image main"><img src="images/pic05.jpg" alt="" /></span>
           <p>
-            Resource Development: Developed web-resource RAPSAP, a curated
+            Resource development: Developed web-resource RAPSAP, a curated
             database providing comprehensive structural information on the
             complete human autophagy protein interactome containing ~416 proteins (Malhotra & Khatri et al., Autophagy, 2023)
             .
           </p>
           <span class="image main"><img src="images/pic06.jpg" alt="" /></span>
           <p>
-            Cohort Studies: Conducted serological testing on 1008 voluntary
+            Cohort studies: Conducted serological testing on 1008 voluntary
             participants as part of the Phenome India Cohort Project (CSIR-800),
             utilizing Elecsys Anti-SARS-CoV-2 electrochemiluminescence
             immunoassay (ECLIA) for qualitative antibody detection followed by curation and analsis of clinical data.
@@ -111,50 +166,40 @@
 
 <p><strong>AI/ML & Deep Learning in Bioinformatics</strong> - Applying AI, machine learning (ML), and deep learning for biological data analysis and being proficient in ML frameworks such as TensorFlow and PyTorch.</p>
 
-        </article>
-        <article id="contact">
-          <h2 class="major">Contact</h2>
-          <ul class="icons">
-            <li>
-              <a href="https://x.com/Shantanu_khtri" class="icon brands fa-twitter" target="_blank"
-                ><span class="label">Twitter</span></a
-              > &nbsp;@x.com/Shantanu_khtri
-            </li>
-            <li>
-              <a
-                href="mailto:shantanukhatri.bio@gmail.com"
-                class="icon brands fa-google"
-                target="_blank"
-                ><span class="label"></span
-              ></a>&nbsp;shantanukhatri.bio@gmail.com
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/shantanukhatri/"
-                class="icon brands fa-linkedin"
-                target="_blank"
-                ><span class="label">LinkedIn</span></a
-              >&nbsp;@shantanukhatri
-            </li>
-            <li>
-              <a
-                href="https://github.com/Comp-era"
-                target="_blank"
-                class="icon brands fa-github"
-                ><span class="label">GitHub</span></a
-              >&nbsp;@github.com/Comp-era
-            </li>
-            <li>
-              <a
-                href="https://stackoverflow.com/users/15029532/comp-era"
-                target="_blank"
-                class="icon brands fa-stack-overflow"
-                ><span class="label">Stack Overflow</span></a
-              > &nbsp;@comp-era
-            </li>
-          </ul>
-        </article>
+</article>
+<article id="contact">
+  <h2 class="major">Contact</h2>
+  <ul class="icons">
+    <li>
+      <a href="https://x.com/Shantanu_khtri" target="_blank" class="icon brands fa-twitter">
+        <span class="label">Twitter</span> @x.com/Shantanu_khtri
+      </a>
+    </li>
+    <li>
+      <a href="mailto:shantanukhatri.bio@gmail.com" target="_blank" class="icon brands fa-google">
+        <span class="label">Email</span> shantanukhatri.bio@gmail.com
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/shantanukhatri/" target="_blank" class="icon brands fa-linkedin">
+        <span class="label">LinkedIn</span> @shantanukhatri
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Comp-era" target="_blank" class="icon brands fa-github">
+        <span class="label">GitHub</span> @github.com/Comp-era
+      </a>
+    </li>
+    <li>
+      <a href="https://stackoverflow.com/users/15029532/comp-era" target="_blank" class="icon brands fa-stack-overflow">
+        <span class="label">StackOverflow</span> @comp-era
+      </a>
+    </li>
+  </ul>
+</article>
+
       </div>
+  
       <footer id="footer">
         <p class="copyright">
           &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
@@ -167,5 +212,45 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- ✅ Quote visibility toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const quote = document.getElementById("quote-box");
+
+        function toggleQuoteVisibility() {
+          const hash = window.location.hash;
+          if (!hash || hash === "#") {
+            quote.style.display = "block"; // show on homepage
+          } else {
+            quote.style.display = "none"; // hide on #contact, etc.
+          }
+        }
+
+        toggleQuoteVisibility(); // check initially
+        window.addEventListener("hashchange", toggleQuoteVisibility); // check on scroll or click
+      });
+    </script>
+
+    <!-- ✅ Swiper JS and Init Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
   </body>
 </html>
