@@ -1798,3 +1798,8 @@ ul.icons li a i {
   border-bottom: none !important;
   background-image: none !important;
 }
+@media (max-width: 600px) {
+  .quote-float {
+    display: none !important;
+  }
+}
