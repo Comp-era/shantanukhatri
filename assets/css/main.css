@@ -1529,7 +1529,7 @@ p{
 /* === Floating Quote Box (Top-Right) === */
 .quote-float {
   position: absolute; /* Scrolls with page */
-  top: 150px;
+  top: 90px;
   right: 15px;
   width: 220px;
   background: rgba(255, 255, 255, 0.08); /* subtle blend */
@@ -1681,3 +1681,120 @@ ul.icons li a i {
 
 
 
+.affiliations-float {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 290px;
+  background: rgba(255,255,255,0.09);
+  border-right: 2px solid rgba(255,255,255,0.13);
+  backdrop-filter: blur(8px);
+  padding: 12px 15px 8px 15px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 1010;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInMoveUp 1s cubic-bezier(.39,.575,.565,1.000) 0.2s forwards;
+  color: #dde3ee;
+  font-size: 0.86em;
+}
+
+.affiliation-main {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.affiliation-role {
+  color: #bed3ee;
+  margin-bottom: 3px;
+  font-size: 0.96em;
+  font-weight: 400;
+}
+
+.affiliation-institute {
+  color: #bed3ee;
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .affiliations-float { display: none !important; }
+}
+
+@keyframes fadeInMoveUp {
+  0% { opacity: 0; transform: translateY(16px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+@media (max-width: 600px) {
+  .affiliations-float { display: none !important; }
+}
+.social-float {
+  position: absolute;
+  top: 120px;    /* Adjust as needed */
+  right: 18px;
+  width: 80px;   /* Wider for two icons */
+  background: rgba(255,255,255,0.09);
+  border-left: 2.5px solid rgba(255,255,255,0.17);
+  backdrop-filter: blur(10px);
+  padding: 10px 12px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  z-index: 1011;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInMoveUp 1s cubic-bezier(.39,.575,.565,1.000) 0.3s forwards;
+  display: flex;
+  flex-direction: row;     /* <--- side by side */
+  gap: 0.85em;             /* space between icons */
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #dde3ee;
+  background: transparent !important;
+  font-size: 1.48em;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  transition: background 0.17s, color 0.17s, transform 0.15s;
+  text-align: center;
+}
+
+.social-link.github:hover {
+  background: rgba(1, 40, 80, 0.18);
+  color: #fff;
+  transform: scale(1.12);
+}
+.social-link.linkedin:hover {
+  background: rgba(6, 57, 108, 0.16);
+  color: #fff;
+  transform: scale(1.12);
+}
+
+@media (max-width: 700px) {
+  .social-float { display: none !important; }
+}
+
+@keyframes fadeInMoveUp {
+  0% { opacity: 0; transform: translateY(16px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.social-link {
+  text-decoration: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
