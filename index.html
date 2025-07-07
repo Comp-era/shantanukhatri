@@ -18,33 +18,32 @@
   </head>
   <body class="is-preload">
   <div id="wrapper">
-      <!-- Desktop quote: shown only on wide screens -->
-  <div class="quote-float quote-desktop fade-in" id="quote-box-desktop">
-    <div class="quote-text">“Intelligence is the ability to adapt to change.”</div>
-    <div class="quote-author">– Stephen Hawking</div>
-  </div>
-     <!-- ✅ Floating quote with fade-in animation -->
-  <div class="quote-float fade-in"  id="quote-box">
-    <div class="quote-text">“Intelligence is the ability to adapt to change.”</div>
-    <div class="quote-author">– Stephen Hawking</div>
-  </div>
+<!-- Quote Box -->
+<div class="quote-float fade-in" id="quote-box">
+  <div class="quote-text">“Intelligence is the ability to adapt to change.”</div>
+  <div class="quote-author">– Stephen Hawking</div>
+</div>
 
       <header id="header">
         <div class="logo">
             <img src="data/photo_2.jpg" alt="Shantanu Khatri" />
-        </div>
-        <div class="content">
-          <div class="inner">
-            <h1>SHANTANU KHATRI</h1>
-            <p class="bio_intro">
-              Computational Biologist with extensive experience in protein structural modeling, molecular
-              dynamics simulations, multi-omics and 
-              high-performance computing. Proficient in Python and adept at designing and formulating interdisciplinary
-              in silico workflows on computational clusters. Experienced in processing, analyzing, and interpreting high-throughput complex biomolecular data.  <br />  <a href="assets/Shantanu_Khatri_CV.pdf" target="_blank"  class="download-btn">Download CV</a>
-            </p>
-          </div>
-        </div>
-        <nav>
+</div>
+<div class="content">
+  <div class="inner">
+    <h1>SHANTANU KHATRI</h1>
+    <p class="bio_intro">
+      Computational Biologist with extensive experience in protein structural modeling, molecular
+      dynamics simulations, multi-omics and high-performance computing. Proficient in Python and adept at designing and formulating interdisciplinary
+      in silico workflows on computational clusters. Experienced in 
+      processing, analyzing, and interpreting high-throughput complex 
+      biomolecular data.
+      <a href="assets/Shantanu_Khatri_CV.pdf" target="_blank" class="download-btn">Download CV</a>
+    </p>
+  </div>
+</div>
+<nav>
+
+
           <ul>
             <li><a href="#intro">Intro</a></li>
             <li><a href="#work">Work</a></li>
@@ -107,44 +106,58 @@
           <video width="100%" autoplay loop height="auto" controls>
             <source src="video/0001-0250.mp4" type="video/mp4" />
           </video>
-          <p>
-            Biomolecular simulations: Investigated structural differences across
-            various functional oligomeric forms of E1 enzyme ATG7 in complex with ubiquitin-like proteins (UBLs) and E2-like enzymes
-             leveraging molecular dynamics simulations,
-            revealing structural and mechanistic insights.(Malhotra & Khatri et al., Autophagy, 2023)
-            .
-          </p>
-          <span class="image main"><img src="images/pic07.jpg" alt="" /></span>
-          <p>
-            In-silico mutations: Designed in-silico mutants of the ATG7–ATG10 tetrameric 
-            complex to identify and validate key binding regions, assessing their effects 
-            on protein–protein interactions and elucidating the role of intrinsically disordered regions (IDRs) in mediating complex stability.
-          </p>
-          <span class="image main"><img src="images/pic08.jpg" alt="" /></span>
-          <p>
-            Experimental design & validations: Designed an integrated workflow combining in-silico predictions with in-vitro and 
-            biophysical experiments to validate key binding regions and interaction (Malhotra & Khatri et al., Autophagy, 2023).
-          <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-          <p>
-            Cavity proteins: Explored the bipartite membrane protein ATG2A,
-            revealing its architecture, and identified dynamic transitions of
-            cavity-lining residues through simulations, suggesting their
-            critical role in regulating lipid transfer.
-          </p>
-          <span class="image main"><img src="images/pic05.jpg" alt="" /></span>
-          <p>
-            Resource development: Developed web-resource RAPSAP, a curated
-            database providing comprehensive structural information on the
-            complete human autophagy protein interactome containing ~416 proteins (Malhotra & Khatri et al., Autophagy, 2023)
-            .
-          </p>
-          <span class="image main"><img src="images/pic06.jpg" alt="" /></span>
-          <p>
-            Cohort studies: Conducted serological testing on 1008 voluntary
-            participants as part of the Phenome India Cohort Project (CSIR-800),
-            utilizing Elecsys Anti-SARS-CoV-2 electrochemiluminescence
-            immunoassay (ECLIA) for qualitative antibody detection followed by curation and analsis of clinical data.
-          </p>
+<div class="work-grid">
+  <div class="work-item">
+    <span class="image main"><img src="images/pic07.jpg" alt="" /></span>
+    <p>
+      Biomolecular simulations: Investigated structural differences across
+      various functional oligomeric forms of E1 enzyme ATG7 in complex with ubiquitin-like proteins (UBLs) and E2-like enzymes
+      leveraging molecular dynamics simulations, revealing structural and mechanistic insights. (Malhotra & Khatri et al., Autophagy, 2023)
+    </p>
+  </div>
+  <div class="work-item">
+    <span class="image main"><img src="images/pic08.jpg" alt="" /></span>
+    <p>
+      In-silico mutations: Designed in-silico mutants of the ATG7–ATG10 tetrameric 
+      complex to identify and validate key binding regions, assessing their effects 
+      on protein–protein interactions and elucidating the role of intrinsically disordered regions (IDRs) in mediating complex stability.
+    </p>
+  </div>
+  <div class="work-item">
+    <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+    <p>
+      Experimental design & validations: Designed an integrated workflow combining in-silico predictions with in-vitro and 
+      biophysical experiments to validate key binding regions and interaction (Malhotra & Khatri et al., Autophagy, 2023).
+    </p>
+  </div>
+  <div class="work-item">
+    <span class="image main"><img src="images/pic05.jpg" alt="" /></span>
+    <p>
+      Cavity proteins: Explored the bipartite membrane protein ATG2A,
+      revealing its architecture, and identified dynamic transitions of
+      cavity-lining residues through simulations, suggesting their
+      critical role in regulating lipid transfer.
+    </p>
+  </div>
+  <div class="work-item">
+    <span class="image main"><img src="images/pic06.jpg" alt="" /></span>
+    <p>
+      Resource development: Developed web-resource RAPSAP, a curated
+      database providing comprehensive structural information on the
+      complete human autophagy protein interactome containing ~416 proteins (Malhotra & Khatri et al., Autophagy, 2023).
+    </p>
+  </div>
+  <div class="work-item">
+    <span class="image main"><img src="images/picXX.jpg" alt="" /></span>
+    <p>
+      Cohort studies: Conducted serological testing on 1008 voluntary
+      participants as part of the Phenome India Cohort Project (CSIR-800),
+      utilizing Elecsys Anti-SARS-CoV-2 electrochemiluminescence
+      immunoassay (ECLIA) for qualitative antibody detection followed by curation and analysis of clinical data.
+    </p>
+  </div>
+</div>
+
         </article>
         <article id="about">
           <h2 class="major">Skills</h2>
@@ -257,4 +270,3 @@
     </script>
 
   </body>
-</html>

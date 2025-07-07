@@ -924,7 +924,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 1.5rem;
 		}
 		#header > :first-child {
 			margin-top: 0;
@@ -1354,7 +1354,7 @@ input, select, textarea {
     border-top-width: 1px;
     border-bottom-width: 1px;
     max-width: 100%;
-    margin-top: 100px; /* Moves horizontal line downward */
+    margin-top: 110px; /* Moves horizontal line downward */
 }
 
 /* Remove the Vertical Line Under the Profile Image */
@@ -1377,7 +1377,7 @@ input, select, textarea {
 
 /* Adjust Header Name ("Shantanu Khatri") Position */
 #header h1 {
-    margin-top: 20px; /* Adds space between image and text */
+    margin-top: 1px; /* Adds space between image and text */
 }
 
 /* Keep Everything Else from Original CSS File */
@@ -1529,7 +1529,7 @@ p{
 /* === Floating Quote Box (Top-Right) === */
 .quote-float {
   position: absolute; /* Scrolls with page */
-  top: 110px;
+  top: 150px;
   right: 15px;
   width: 220px;
   background: rgba(255, 255, 255, 0.08); /* subtle blend */
@@ -1572,6 +1572,7 @@ p{
   }
 }
 
+
 .swiper {
   width: 100%;
   height: auto;
@@ -1601,55 +1602,27 @@ p{
   opacity: 1;
 }
 
-/* ── Base style for both quotes ── */
-.quote-float {
-  width: clamp(280px, 90%, 400px);
-  padding: 1rem;
-  background: rgba(255,255,255,0.08);
-  border-left: 3px solid rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  font-style: italic;
-  text-align: center;
-  z-index: 999;
-  animation: fadeInMoveUp 0.8s ease-out forwards;
-}
-
-/* ── Desktop: show only the top‐right version ── */
-.quote-mobile  { display: none; }
-@media screen and (min-width: 769px) {
-  .quote-desktop {
-    display: block;
-    position: absolute;
-    top: 110px;
-    right: 15px;
-  }
-}
-
-/* ── Mobile: show only the bottom‐of‐page version ── */
-.quote-desktop { display: none; }
-@media screen and (max-width: 768px) {
-  .quote-mobile {
-    display: block;
-    position: absolute;           /* anchored to #wrapper */
-    bottom: 0;                    /* true wrapper bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 320px;
-    margin: 0 auto;
-  }
-}
 
 
 /* ── Allow the header to grow to fit all text ── */
 #header .inner {
-  height: auto !important;        /* let container size to its content */
-  max-height: none !important;    /* remove any height cap */
-  overflow: visible !important;   /* don’t clip overflow text */
-  padding: 2rem 1rem !important;   /* breathing room around the text */
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 2rem 1rem !important;
 }
 
-
+/* Animation keyframes */
+@keyframes fadeInMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 ul.icons {
@@ -1692,9 +1665,19 @@ ul.icons li a i {
   margin: 0;
 }
 
-
-@media screen and (max-width: 768px) {
-  #wrapper {
-    padding-bottom: 0 !important;
-  }
+.bio_intro {
+  font-size: 18px !important;
+  text-align: justify;
+  position: relative;
 }
+
+.bio_intro .download-btn {
+  float: right;
+  margin-left: 1.5rem;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  /* Remove width if present */
+}
+
+
+
