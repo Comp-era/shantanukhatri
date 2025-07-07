@@ -288,5 +288,21 @@
         },
       });
     </script>
+    <!-- ✅ Affiliations box visibility toggle -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const affiliations = document.getElementById("affiliations-box");
+    function toggleAffiliationsVisibility() {
+      const hash = window.location.hash;
+      if (!hash || hash === "#") {
+        affiliations.style.display = "block";
+      } else {
+        affiliations.style.display = "none";
+      }
+    }
+    toggleAffiliationsVisibility();
+    window.addEventListener("hashchange", toggleAffiliationsVisibility);
+  });
+</script>
 
   </body>
