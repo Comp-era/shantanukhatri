@@ -1732,6 +1732,16 @@ ul.icons li a i {
 @media (max-width: 600px) {
   .affiliations-float { display: none !important; }
 }
+
+@media (min-width: 1680px) {
+  .affiliations-float {
+    left: 80px;          /* Move further from left edge */
+    width: 400px;        /* Make box wider */
+    font-size: 1em;      /* Slightly bigger text */
+    padding: 20px 25px;  /* More padding for bigger box */
+  }
+}
+
 .social-float {
   position: absolute;
   top: 165px;    /* Adjust as needed */
