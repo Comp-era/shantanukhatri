@@ -1685,7 +1685,7 @@ ul.icons li a i {
   position: absolute;
   top: 80px;
   left: 20px;
-  width: 290px;
+  width: 300px;
   background: rgba(255,255,255,0.09);
   border-right: 2px solid rgba(255,255,255,0.13);
   backdrop-filter: blur(8px);
@@ -1734,7 +1734,7 @@ ul.icons li a i {
 }
 .social-float {
   position: absolute;
-  top: 120px;    /* Adjust as needed */
+  top: 165px;    /* Adjust as needed */
   right: 18px;
   width: 80px;   /* Wider for two icons */
   background: rgba(255,255,255,0.09);
