@@ -1733,18 +1733,17 @@ ul.icons li a i {
   .affiliations-float { display: none !important; }
 }
 
+/* Move the box UP on large screens */
 @media (min-width: 1680px) {
   .affiliations-float {
-    left: 80px;          /* Move further from left edge */
-    width: 400px;        /* Make box wider */
-    font-size: 1em;      /* Slightly bigger text */
-    padding: 20px 25px;  /* More padding for bigger box */
+    top: 40px;        /* Reduced from 80px to move up */
+    left: 40px;       /* Keep horizontal adjustment */
   }
 }
 
 .social-float {
   position: absolute;
-  top: 165px;    /* Adjust as needed */
+  top: 145px;    /* Adjust as needed */
   right: 18px;
   width: 80px;   /* Wider for two icons */
   background: rgba(255,255,255,0.09);
