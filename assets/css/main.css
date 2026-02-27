@@ -1683,9 +1683,9 @@ ul.icons li a i {
 
 .affiliations-float {
   position: absolute;
-  top: 80px;
+  top: 40px;
   left: 20px;
-  width: 300px;
+  width: 250px;
   background: rgba(255,255,255,0.09);
   border-right: 2px solid rgba(255,255,255,0.13);
   backdrop-filter: blur(8px);
